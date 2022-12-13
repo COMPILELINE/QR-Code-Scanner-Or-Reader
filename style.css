@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html , body{
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    width: 450px;
+    max-width: 450px;
+    /* height: 220px; */
+    padding: 10px;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.wrapper.active{
+    height: fit-content;
+}
+
+.wrapper form{
+    cursor: pointer;
+    border-radius: 5px;
+    height: 200px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper form img {
+    max-width: 140px;
+    /* display: none; */
+}
+
+.wrapper.active img{
+    display: block;
+}
+
+.wrapper form .content{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper.active form .content{
+    display: none;
+}
+
+.wrapper form .content span{
+    width: 40px;
+    height: 40px;
+    background: url('./upload.svg') no-repeat center;
+}
+
+.wrapper form .content p{
+    color: #0b85ff;
+}
+
+.wrapper .details{
+    /* opacity: 0;
+    pointer-events: none; */
+    margin-top: 10px;
+}
+
+.wrapper.active .details{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.wrapper .details textarea{
+    width: 100%;
+    resize: none;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: #111;
+    color: #eee;
+    margin-bottom: 10px;
+}
+
+.wrapper .details .buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper .details .buttons button{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    font-weight: 900;
+    font-size: 15px;
+}
