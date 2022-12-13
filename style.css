@@ -19,7 +19,7 @@ html , body{
 .wrapper{
     width: 450px;
     max-width: 450px;
-    /* height: 220px; */
+    height: 220px;
     padding: 10px;
     background-color: #000;
     border-radius: 10px;
@@ -41,7 +41,7 @@ html , body{
 
 .wrapper form img {
     max-width: 140px;
-    /* display: none; */
+    display: none;
 }
 
 .wrapper.active img{
@@ -70,8 +70,8 @@ html , body{
 }
 
 .wrapper .details{
-    /* opacity: 0;
-    pointer-events: none; */
+    opacity: 0;
+    pointer-events: none;
     margin-top: 10px;
 }
 
