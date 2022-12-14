@@ -7,7 +7,7 @@ fileInput = form.querySelector('input');
 
 function fetchRequest(formData , file) {
     infoText.textContent = 'Scanning QR Code...'
-    fetch('http://api.qrserver.com/v1/read-qr-code/', {
+    fetch('https://api.qrserver.com/v1/read-qr-code/', {
         method : "POST",
         body : formData
     }).then(res => res.json()).then(result => {
